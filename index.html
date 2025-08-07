@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            background-color: #f3e9f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 800px;
+        }
+
+        .item {
+            display: flex;
+            padding: 10px;
+            background-color: #8a2be2;
+            border-radius: 8px;
+            width: 170px;
+            height: 170px;
+        }
+
+        .box {
+            width: 25px;
+            height: 25px;
+            background-color: #ffa500;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        /* Примеры с разными значениями justify-content и align-items */
+
+        .item.flex-start-start {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .item.center-start-column {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .item.flex-end-start {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .item.space-between-start {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .item.flex-start-end {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .item.center-end {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .item.flex-end-end {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .item.space-around-end {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .item.flex-start-center {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .item.center-end-column {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .item.space-evenly-center {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .item.center-center {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item flex-start-start">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item center-start-column">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item flex-end-start">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item space-between-start">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item flex-start-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item center-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item flex-end-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item space-around-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item flex-start-center">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item center-end-column">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item space-evenly-center">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="item center-center">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
